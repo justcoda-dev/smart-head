@@ -1,10 +1,15 @@
 <template>
-$END$
+  <button @click="onClick">
+    <slot>X</slot>
+  </button>
 </template>
 
-<script>
-export default {
-name: "ButtonHide"
+<script lang="ts" setup>
+import {defineEmits} from "vue";
+
+const emit = defineEmits()
+const onClick = () => {
+  emit("onClick")
 }
 </script>
 
