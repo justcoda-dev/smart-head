@@ -18,7 +18,7 @@ import {defineProps, defineEmits} from "vue";
 
 interface IProps {
   options: [],
-  placeholder: string
+  placeholder?: string
 }
 
 const props = defineProps<IProps>()

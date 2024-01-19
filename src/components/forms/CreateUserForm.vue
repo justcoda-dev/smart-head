@@ -23,7 +23,15 @@ const email = ref()
 const nameError = ref()
 const emailError = ref()
 
-const submitDisabled = computed(() => name.value && email.value && !emailError.value && !nameError.value)
+const submitDisabled = computed(() => {
+  if (name.value && email.value && !emailError.value && !nameError.value) {
+    return false
+  } else {
+    return true
+  }
+})
+
+console.log(submitDisabled.value)
 
 const onSubmit = (e: HTMLFormElement) => {
   e.preventDefault()

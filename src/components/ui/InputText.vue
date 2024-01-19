@@ -14,9 +14,9 @@
 import {defineModel, defineProps} from "vue";
 
 interface IProps {
-  placeholder: string,
-  errorText: string,
-  validText: string
+  placeholder?: string,
+  errorText?: string,
+  validText?: string
 }
 
 const props = defineProps<IProps>()
@@ -47,6 +47,7 @@ const model = defineModel()
   &__error-text {
     color: #ba3c18;
   }
+
   &__valid {
     color: #019501;
   }

@@ -13,7 +13,6 @@
 <script lang="ts" setup>
 import UsersListItem from "@/components/usersList/UsersListItem.vue";
 import ButtonCreate from "@/components/ui/ButtonCreate.vue";
-
 import {defineEmits} from "vue";
 
 const emit = defineEmits()

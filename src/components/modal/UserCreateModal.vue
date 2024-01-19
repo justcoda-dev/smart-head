@@ -14,7 +14,7 @@
 import ButtonHide from "@/components/ui/ButtonHide.vue";
 import InputText from "@/components/ui/InputText.vue";
 import CreateUserForm from "@/components/forms/CreateUserForm.vue";
-import {defineEmits, ref} from "vue";
+import {defineEmits} from "vue";
 
 
 interface IProps {
